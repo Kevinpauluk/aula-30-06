@@ -29,6 +29,6 @@ botaoIncrementar.addEventListener('click', () => {
 atualizarContador();
 
 botaoZerar.addEventListener('click', () => {
-    contador = 0; // Reseta o contador para 0
-    atualizarContador(); // Atualiza o display
+    contador = 0;
+    atualizarContador();
 });
