@@ -5,7 +5,7 @@ let contador = 0;
 const elementoContador = document.getElementById('contador');
 const botaoDecrementar = document.getElementById('decrementar');
 const botaoIncrementar = document.getElementById('incrementar');
-const botaoZerar = document.getElementById('zerar');
+
 
 // Atualiza o contador na tela
 function atualizarContador() {
@@ -28,7 +28,8 @@ botaoIncrementar.addEventListener('click', () => {
 atualizarContador();
 
 const botaoZerar = document.getElementById('zerar');
+
 botaoZerar.addEventListener('click', () => {
-    contador = 0;
-    atualizarContador();
+    contador = 0; // Reseta o contador para 0
+    atualizarContador(); // Atualiza o display
 });
