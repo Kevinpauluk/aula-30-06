@@ -5,10 +5,10 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('img/fundo.jpg'); /* URL da imagem */
-    background-size: cover; /* Cobrir toda a tela */
-    background-position: center; /* Centralizar a imagem */
-    background-repeat: no-repeat; /* Não repetir a imagem */
+    background-image: url('img/fundo.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .container {
@@ -38,7 +38,7 @@ button {
     padding: 0.5rem 1.5rem;
     margin: 0 0.5rem;
     cursor: pointer;
-    background-color: #3498db;
+    background-color: #b229b9;
     color: white;
     border: none;
     border-radius: 5px;
@@ -46,5 +46,5 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #b229b9;
 }
