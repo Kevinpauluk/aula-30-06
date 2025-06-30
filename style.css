@@ -5,7 +5,10 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f9;
+    background-image: url('img/fundo.jpg'); /* URL da imagem */
+    background-size: cover; /* Cobrir toda a tela */
+    background-position: center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Não repetir a imagem */
 }
 
 .container {
