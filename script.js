@@ -32,3 +32,38 @@ botaoZerar.addEventListener('click', () => {
     contador = 0;
     atualizarContador();
 });
+
+// Array de imagens
+const imagensDeFundo = [
+    "url('img/fundo')",
+    "url('img/fundo2')",
+    "url('img/fundo3')",
+    "url('img/fundo4')",
+    "url('img/fundo5')",
+    "url('img/fundo6')",
+];
+
+// Função para mudar o fundo aleatoriamente
+function mudarFundo() {
+    const fundoAleatorio = imagensDeFundo[Math.floor(Math.random() * imagensDeFundo.length)];
+    document.body.style.backgroundImage = fundoAleatorio;
+}
+
+// Chame a função nos eventos de clique
+botaoDecrementar.addEventListener('click', () => {
+    contador--;
+    atualizarContador();
+    mudarFundo(); // Muda o fundo ao decrementar
+});
+
+botaoIncrementar.addEventListener('click', () => {
+    contador++;
+    atualizarContador();
+    mudarFundo(); // Muda o fundo ao incrementar
+});
+
+botaoZerar.addEventListener('click', () => {
+    contador = 0;
+    atualizarContador();
+    mudarFundo(); // Muda o fundo ao zerar
+});
