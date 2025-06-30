@@ -5,6 +5,7 @@ let contador = 0;
 const elementoContador = document.getElementById('contador');
 const botaoDecrementar = document.getElementById('decrementar');
 const botaoIncrementar = document.getElementById('incrementar');
+const botaoZerar = document.getElementById('zerar');
 
 // Atualiza o contador na tela
 function atualizarContador() {
