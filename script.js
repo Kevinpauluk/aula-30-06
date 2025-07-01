@@ -1,49 +1,33 @@
-// Variáveis
+// Variável para armazenar o valor do contador
 let contador = 0;
+
+// Elementos HTML
 const elementoContador = document.getElementById('contador');
 const botaoDecrementar = document.getElementById('decrementar');
 const botaoIncrementar = document.getElementById('incrementar');
-const botaoZerar = document.getElementById('zerar');
 
-// Imagens de fundo
-const imagensDeFundo = [
-"url('img/fundo')",
-"url('img/fundo2')",
-"url('img/fundo3')",
-"url('img/fundo4')",
-"url('img/fundo5')",
-"url('img/fundo6')",
-];
-
-// Funções
+// Atualiza o contador na tela
 function atualizarContador() {
     elementoContador.textContent = contador;
 }
 
-function mudarFundo() {
-    const indice = Math.floor(Math.random() * imagensDeFundo.length);
-    document.body.style.backgroundImage = imagensDeFundo[indice];
-}
-
-// Eventos (APENAS UMA VEZ PARA CADA BOTÃO)
-botaoIncrementar.addEventListener('click', () => {
-    contador++;
-    atualizarContador();
-    mudarFundo();
-});
-
+// Evento para decrementar
 botaoDecrementar.addEventListener('click', () => {
     contador--;
     atualizarContador();
-    mudarFundo();
 });
 
+// Evento para incrementar
+botaoIncrementar.addEventListener('click', () => {
+    contador++;
+    atualizarContador();
+});
+
+// Inicializa o contador
+atualizarContador();
+
+const botaoZerar = document.getElementById('zerar');
 botaoZerar.addEventListener('click', () => {
     contador = 0;
     atualizarContador();
-    mudarFundo();
 });
-
-// Inicialização
-atualizarContador();
-mudarFundo(); // Define um fundo inicial
